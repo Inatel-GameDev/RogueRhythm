@@ -58,13 +58,13 @@
 - Escolha seu caminho 
   - Após cada escolha de recompensa desbloqueie opções de caminhos 
   - Caminhos mais difíceis dão melhores recompensas 
-## Objetivos 
+### Objetivos 
   - Fazer um mini game e expandir para um jogo maior e mais único/divertido e obviamente complexo. 
-## Ideias 
+### Ideias 
   - Item-Aposta do matemático (Lendário): Fazer contas nunca foi tão importante, seus ataques dão 3x + 1 de dano se forem números ímpares e 0.5x dano se forem números pares 
   - Habilidade- Cara de fome: Causa Fragilidade. 
 
-## Inspirações 
+### Inspirações 
 
  
 
