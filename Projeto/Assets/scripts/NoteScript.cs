@@ -13,7 +13,6 @@ public class NoteScript : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-
         body.AddForce(direction * noteSpeed);
     }
 

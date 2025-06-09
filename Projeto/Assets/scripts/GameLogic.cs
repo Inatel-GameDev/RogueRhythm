@@ -37,7 +37,7 @@ IEnumerator PlayMusic()
                 {
                     if (Songs[i, j] == true)
                     {
-                        Instantiate(Note, Spawners[j]);
+                        Instantiate(Note, Spawners[j].transform);
                     }
                 }
                 yield return new WaitForSeconds(timeBetweenBeats);
