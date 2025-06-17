@@ -5,17 +5,22 @@ public class GameLogic : MonoBehaviour
 {
     bool[,] Songs = { { true, false, true, true }, { false, true, true, false }, { true, true, true, false }, { true, false, false, false } };
 
+
     int size;
 
     [SerializeField]
     Transform[] Spawners;
     [SerializeField]
+    Transform[] enemysSpawners;
+    
+    [SerializeField]
     GameObject Note;
 
-    float timeBetweenBeats = 1.0f;
+    float timeBetweenBeats = 2.0f;
 
     void Start()
     {
+        Time.timeScale = 1;
         StartCoroutine(PlayMusic()); 
     }
 
@@ -38,6 +43,10 @@ IEnumerator PlayMusic()
                     if (Songs[i, j] == true)
                     {
                         Instantiate(Note, Spawners[j].transform);
+                    }
+                    if (Songs[i, j] == false)
+                    {
+                      Instantiate(Note, enemysSpawners[j].transform);  
                     }
                 }
                 yield return new WaitForSeconds(timeBetweenBeats);

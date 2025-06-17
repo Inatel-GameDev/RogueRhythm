@@ -3,7 +3,7 @@ using UnityEngine;
 public class NoteScript : MonoBehaviour
 {
     [SerializeField]
-    float noteSpeed = 2f;
+    float noteSpeed = 4f;
 
     Vector2 direction = Vector2.left;
 

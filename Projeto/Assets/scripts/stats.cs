@@ -27,7 +27,7 @@ public abstract class stats : MonoBehaviour
     }
 
 
-    public void addStatus(string status, int valor)
+    public void modStatus(string status, int valor)
     {
         if (status == "vitalidade")
         {
